@@ -1,0 +1,22 @@
+<!-- MIAN -->
+
+<div class="AdminMain">
+    <div class="AdminContainer">
+        <h2>Stardust Coincidence Admin</h2>
+        <form action="/admin/novedades/modificar" method="post">
+            <input type="hidden" value="{{novedad.id}}" name="id">
+            <h3>Titulo</h3>
+            <input type="text" name="titulo" value="{{novedad.titulo}}" title="El titulo solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <h4>Sub Titulo</h4>
+            <input type="text" name="subtitulo" value="{{novedad.subtitulo}}" title="Este campo solo acepta texto." pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <h4>Cuerpo</h4>
+            <input type="text" name="cuerpo" value="{{novedad.cuerpo}}" title="Este campo solo acepta texto." pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <input type="submit" value="Guardar">
+        </form>
+
+        {{#if error}}
+            <p>{{message}}</p>
+        {{/if}}
+
+    </div>
+</div>

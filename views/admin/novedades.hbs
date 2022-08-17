@@ -1,0 +1,43 @@
+
+<!-- MAIN -->
+
+<div class="AdminMain">
+    <div class="AdminContainer">
+       <div class="add__news">
+            <h1>Lista de Novedades</h1>
+            <div class="add__news_BTN">
+                <a href="/admin/novedades/agregar" class="add__news_a">NUEVO</a>
+            </div>
+       </div>
+       <div class="news__list">
+            <div class="news schema">
+                <div class="news id"><p>#</p></div>
+                <div class="news title">TITULO</div>
+                <div class="news subtitle">SUBTITULO</div>
+                <div class="news actions">ACCIONES</div>
+            </div>
+
+            {{#each novedades}}
+                <div class="news">
+                    <div class="news id"><p>{{id}}</p></div>
+                    <div class="news title">{{titulo}}</div>
+                    <div class="news subtitle">{{subtitulo}}</div>
+                    <div class="news actions">
+                        <a href="/admin/novedades/modificar/{{id}}"><i class="fa-solid fa-pen-to-square edit_BTN"></i></a>
+                        <a href="/admin/novedades/delete/{{id}}"><i class="fa-solid fa-trash-can delete_BTN"></i></a>
+                    </div>
+                </div>
+            {{/each}}
+       </div>
+        <div class="logout">
+            <a href="/admin/login/logout">Cerrar Sesion</a>
+        </div>
+    </div>
+</div>
+
+<!--
+
+                    <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a href=""><i class="fa-solid fa-trash-can"></i></a>
+
+-->

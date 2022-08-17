@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box; /* Para que el espaciado interno y externo sumen uno solo */
+    margin: 0;
+    padding: 0;
+}
+
+.imgs {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 44%, rgba(7,34,80,1) 100%, rgba(0,170,205,1) 100%, rgba(0,212,255,1) 100%);
+    font-size: 1em;
+    font-family: 'Glass Antiqua', cursive;
+    scroll-behavior: initial;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -100;
+} 
+
+.nav__main__img {
+    max-height: 50px;
+    max-width: 50px;
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/*  NAVEGATION  */
+
+.nav__main {
+    background-image: url('/images/nav.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 40px 20px;
+    box-shadow: 0 6px 6px #091013;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    margin: auto;
+    z-index: 10;
+}
+
+/*  LEFT NAV  */
+
+.nav__main ul {
+    display: flex;
+}
+
+.nav__main ul li {
+    padding: 10px;
+}
+
+.nav__main ul.nav__main__menu {
+    flex: 1;
+    margin-left: 30px;
+}
+.nav__main ul li a {
+    padding: 4px;
+}
+.nav__main ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/*  SHOWCASE  */
+
+.showcase {
+    margin-top: 6rem;
+    width: 100%;    
+    height: 450px;  
+    background: url('/images/The\ Elder\ Walker\ v2.jpg')  no-repeat center/cover;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.tittle {
+    font-family: 'Crimson Pro', serif;
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.342);
+}
+
+.btn {
+    margin: 15px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(27, 15, 22, 0.596);
+    color: #fff;
+    font-size: 15px;
+    border: 2px solid #fff;
+}
+
+.btn:hover {
+    opacity: 0.5;
+    transform: scale(1.);
+}
+
+
+/*  GALLERY  */
+
+.sub__tittle {
+    display: flex;
+    justify-content: center;
+}
+
+.sub__tittle h3 {
+    margin: 10px 0;
+}
+
+.sub__tittle i {
+    margin-left: 10px;
+}
+
+.sub__tittle a {
+    border-bottom: 2px solid #fff;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+
+}
+
+/*
+.gallery img:hover {
+    border: solid 2px #fff;
+    cursor: pointer;
+}
+*/
+
+.gallery h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.gallery p {
+    margin-top: 10px;
+    display: grid;
+}
+
+.gallery a:hover {
+    text-decoration: underline;
+    color: rgb(12, 51, 117);
+}
+
+
+/*  TOOLS  */
+
+.tools__box {
+    width: 100%;
+    height: 300px;
+    margin: 40px 0;
+    border: solid 2px rgb(0, 0, 139);
+    border-radius: 5px;
+}
+
+.tools__content {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 50px 20px 50px 20px;
+    color: #fff;
+    text-justify: auto;
+}
+
+.tool__snd {
+    margin-left: 120px;
+}
+
+.tools__content img {
+    width: 200px;
+    height: 200px;
+}
+
+.tools__content p {
+    margin: 10px;
+}
+
+.tools__content h2 {
+    margin: 10px 0;
+    text-decoration: underline;
+}
+
+.tools__content a {
+    text-decoration: underline;
+    color: #000;
+}
+
+.tools__backg1 {
+    background-image: url('/images/tool_backgorund.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tools__backg2 {
+    background-image: url('/images/tools2b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*  PROYECT IAI  */
+
+
+.proyect_iai {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    height: 500px;
+}
+
+.proyect__content {
+    width: 500px;
+    margin: 0 90px;
+}
+
+.proyect__content h2 {
+    margin: 25px 0;
+}
+
+.proyect__content h3 {
+    margin: 15spx 0;
+    margin-left: 15px;
+}
+
+.proyect__content p {
+    margin: 15px 0;
+    margin-left: 15px;
+    text-align: justify;
+}
+
+.proyect__content b {
+    color: rgb(117, 117, 20);
+}
+
+.proyect__content b a{
+    color: rgb(117, 117, 20);
+    margin: 5px;
+    text-decoration-line: underline;
+}
+
+.proyect__img__container {
+    justify-content: center;
+}
+
+.proyect__img {
+    height: 350px;
+    width: 200px;
+    margin-left: 30px;
+    box-shadow: 15px 10px 1px rgba(0, 0, 0, 0.452);
+    border-radius: 5px;
+    transition: 0.2s
+}
+
+.proyect__img:hover {
+    height: 360px;
+    width: 210px;
+    cursor: pointer;
+}
+
+
+/*  FOOTER  */
+
+.footer {
+    height: 400px;
+    margin-top: 10em;
+    text-align: center;
+    
+}
+
+.footer__content {
+    margin: 0 0 100px 0;
+    bottom: 0%;
+}
+
+.footer__content p {
+    margin-top: 10px;
+}
+
+.footer__img {
+    width: 100%;
+    height: 250px;
+}
+
+
+/*  RESPONSIVE DESING  */
+
+

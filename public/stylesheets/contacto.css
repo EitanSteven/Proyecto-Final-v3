@@ -1,0 +1,85 @@
+.formPage {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    padding: 15px;
+    background-color: rgba(2, 0, 36, 0.518);
+    border: solid 1px #fff;
+    border-radius: 25px;
+}
+
+.contact-form > * {
+    padding: 0.5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 1rem;
+}
+
+.contact-form input[type="submit"] {
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Glass Antiqua', cursive;
+}
+
+.contact-form [required]:valid {
+    border: solid 3px rgb(34, 152, 28);
+}
+.contact-form [required]:invalid {
+    border: solid 3px #000;
+}
+
+.contact-form-error {
+    margin-top: -1rem;
+    font-size: 80%;
+    background-color: rgba(2, 0, 36, 0.772);
+    color: #fff;
+    transition: all 800ms ease;
+}
+
+.contact-form-error.is-active {
+    display: block;
+    animation: show-mesage 1s 1 normal 0s ease-out both;
+}
+
+.none {
+    display: none;
+}
+
+@keyframes show-mesage {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.formRes {
+    background-color: rgba(2, 0, 36, 0.518);
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: solid 2px #fff;
+    border-radius: 15px;
+    max-width: 500px;
+}

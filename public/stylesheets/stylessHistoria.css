@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box; /* Para que el espaciado interno y externo sumen uno solo */
+    margin: 0;
+    padding: 0;
+}
+
+.H__Input {
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    margin: auto;
+}
+
+.H__Input[type=text] {
+    border: none;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    font-size: 1em;
+    font-family: 'Glass Antiqua', cursive;
+    scroll-behavior: initial;
+}
+
+.nav__main__img {
+    max-height: 50px;
+    max-width: 50px;
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+/*  LEFT NAV  */
+
+.nav__main ul {
+    display: flex;
+}
+
+.nav__main ul li {
+    padding: 10px;
+}
+
+.nav__main ul.nav__main__menu {
+    flex: 1;
+    margin-left: 30px;
+}
+.nav__main ul li a {
+    padding: 4px;
+}
+.nav__main ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/*  H Showcase */
+
+.Hshowcase {
+    background: url('/images/readSection.jpg') top/cover fixed;
+    margin-top: 5rem;
+    height: 500px;
+    position: relative; 
+    display: flex;  /* Para poder modificar la posicion del contenido dentro */
+    justify-content: center;
+    align-items: center;
+}
+
+.Hshowcase::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(66, 66, 66, 0.5) ,rgb(20, 20, 20));
+}
+
+.Hshowcase__Info {
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: rgb(240, 209, 209);
+    margin: auto;
+}
+
+.HTitle {
+    line-height: 1;   
+    font-size: 4em;
+    font-family: 'Crimson Pro', serif;
+}
+
+.HTitleInput {
+    line-height: 1;   
+    font-size: 4em;
+    font-family: 'Crimson Pro', serif;
+}
+
+.Hp {
+    line-height: 2;
+    font-size: 1.3em;
+    color: #3d738a;
+}
+
+/* Content */
+
+.Content {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+}
+
+.History {
+    text-align: center;
+    color: #fff;
+    min-height: 450px;
+    margin-bottom: 50px;
+}
+
+.H__Title {
+    margin-top: 50px;
+    line-height: 2em;
+    font-family: 'Crimson Pro', serif;
+    font-size: 32px;
+}
+
+.H__TitleInput {
+    margin-top: 50px;
+    line-height: 2em;
+    font-family: 'Crimson Pro', serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.H__Lore {
+    max-width: 600px;
+    line-height: 2;
+    text-align: justify;
+    font-family: Quicksand;
+    font-size: 20px;
+}
+
+.H__LoreInput {
+    resize: none;
+    max-width: 600px;
+    min-width: 600px;
+    border: 0;
+    line-height: 2;
+    text-align: justify;
+    font-family: Quicksand;
+    font-size: 20px; 
+}
+
+/* CARGAR IMG & INT */
+
+.cargarImg {
+    border: solid 4px rgba(255, 255, 255, 0.090);
+    border-radius: 35px;
+    min-height: 350px;
+    max-width: 850px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.cargarImg_Title {
+    text-align: center;
+    font-size: 25px;
+    font-family: Quicksand;
+}
+
+.cargarImg_P {
+    text-align: center;
+    margin: 5px 0 20px 0;
+    color: rgba(255, 255, 255, 0.324);
+}
+
+.cargarInt_input {
+    margin-top: 15px;
+    min-width: 600px;
+    font-family: Quicksand;
+    font-size: 20px; 
+    text-align: left;
+}
+
+.cargarInt_input[type=text] {
+    border-bottom: solid 3px rgba(255, 255, 255, 0.090);
+}
+
+.drop_zone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: dashed 3px rgba(255, 255, 255, 0.090);
+    border-radius: 20px;
+    margin: 20px auto 20px auto;
+    color: rgba(255, 255, 255, 0.255);
+    transition: 0.2s;
+}
+
+.drop_zone_text {
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 40px;
+}
+
+.drop_zone--active {
+    border: solid 4px rgba(255, 255, 255, 0.090);
+    background-color: rgba(255, 255, 255, 0.090);
+    color: rgba(255, 255, 255, 0.72);
+    transform: scale(1.1);
+}
+
+.guardarBTN {
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+    width: 180px;
+    height: 40px;
+    margin: auto;
+    border: solid 2px rgba(255, 255, 255, 0.090);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.guardarBTN:hover {
+    background-color: rgba(255, 255, 255, 0.090);
+}
+
+.hide {
+    display: none;
+}
+
+.fileIcon {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.imgPreview {
+    max-height: 100px;
+    max-width: 100px;
+    margin: 10px;
+    margin-bottom: 20px;
+}

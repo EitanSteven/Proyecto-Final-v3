@@ -1,0 +1,66 @@
+<!-- MIAN -->
+
+
+<!--
+    
+<div class="AdminMain">
+    <div class="AdminContainer">
+        <h2>Stardust Coincidence Admin</h2>
+        <form action="/admin/novedades/agregar" method="post">
+            <h3>Titulo</h3>
+            <input type="text" name="titulo" placeholder="Titulo de la historia" title="El titulo solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <h4>Sub Titulo</h4>
+            <input type="text" name="subtitulo" placeholder="subtitulo" title="Este campo solo acepta texto." pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <h4>Cuerpo</h4>
+            <input type="text" name="cuerpo" placeholder="cuerpo" title="Este campo solo acepta texto." pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <input type="submit" value="Guardar">
+        </form>
+
+        {{#if error}}
+            <p>{{message}}</p>
+        {{/if}}
+
+    </div>
+</div>
+    -->
+    <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">
+
+        <div class="Hshowcase">
+            <div class="Hshowcase__Info">
+                <input type="text" placeholder="Ingrese el Titulo" class="HTitleInput H__Input">
+                <p class="Hp">By Stardust Coincidence</p>
+            </div>
+        </div>
+
+        <div class="Content">
+            <div class="Reminder"></div>
+            <div class="History">
+                <input type="text" placeholder="Ingrese el Subtitulo" class=" H__Input H__TitleInput">
+                <textarea id="my-text" class="H__LoreInput H__Input" placeholder="Comience a Escribir..."></textarea>
+            </div>
+        </div>
+
+        <div class="cargarImg">
+            <input type="file" class="hide" name="file" id="file">
+
+            <h3 class="cargarImg_Title">Pagina principal...</h3>
+            <p class="cargarImg_P">(Esto aparecera en la pagina principal)</p>
+
+            <input type="text" class="H__Input cargarInt_input" placeholder="Introduccion...">
+            
+            <div id="drop_zone" class="drop_zone">
+                <img id="fileSelec" src="/stylesheets/icons/file-arrow-up-solid.svg" class="fileIcon" alt="Subir Img">
+                <p class="drop_zone_text">Arrastre o Suba Imagen</p>
+                <img src="" id="imgPreview" class="imgPreview" alt="">
+                <p class="drop_zone_text" id="fileName"></p>
+            </div>
+            
+            <input class="guardarBTN" type="submit" id="guardar" value="Guardar">
+        </div>
+    </form>
+
+    <script src="/javascripts/loadfile.js"></script>
+
+
+
+

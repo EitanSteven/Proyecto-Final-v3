@@ -1,0 +1,17 @@
+<!-- MIAN -->
+
+<div class="AdminMain">
+    <div class="AdminContainer">
+        <h2>Stardust Coincidence Admin</h2>
+        <form action="/admin/login" method="post">
+            <h3>Usuario</h3>
+            <input type="text" name="usuario" placeholder="Nombre de Usuario" title="El nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <h3>Contraseña</h3>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <input type="submit" value="Enviar">
+        </form>
+        {{#if error}}
+            <p>Usuario o Contraseña Incorrecto!</p>
+        {{/if}}
+    </div>
+</div>

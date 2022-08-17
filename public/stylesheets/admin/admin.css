@@ -1,0 +1,126 @@
+.AdminMain {
+    width: 100vw;
+    height: 100%;
+    display: block;
+    
+    margin-top: 70px;
+    border: solid 1px rgba(255, 255, 255, 0);
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+input {
+    display: block;
+    margin: 10px 0 10px 0;
+    padding: 3px;
+}
+
+.AdminContainer input[type="submit"] {
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Glass Antiqua', cursive;
+
+    padding: 5px;
+    width: 125px;
+}
+
+.AdminContainer {
+    min-height: 250px;
+    min-width: 650px;
+    max-width: 850px;
+
+    margin: 8rem auto 8rem auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 35px;
+    padding-bottom: 17px;
+
+    text-align: left;
+    border: solid 4px rgba(255, 255, 255, 0.090);
+    border-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.080);
+}
+
+/*  ADMIN NEWS  */
+
+.add__news {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.add__news_BTN {
+    border: solid 4px rgba(255, 255, 255, 0.090);
+    border-radius: 35px;
+    padding: 10px 15px 10px 15px;
+    min-width: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add__news_BTN :hover {
+    text-decoration: underline;
+}
+
+.logout {
+    display: flex;
+    border: solid 4px rgba(255, 255, 255, 0.090);
+    border-radius: 35px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+    justify-content: right;
+}
+
+.logout :hover {
+    text-decoration: underline;
+}
+
+.news__list {
+    border: solid 4px rgba(255, 255, 255, 0.090);
+    border-radius: 35px;
+    padding: 20px;
+}
+
+.news {
+    display: flex;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.id {
+    max-width: 50px;
+    min-width: 30px;
+}
+
+.title {
+    min-width: 250px;
+    max-width: 250px;
+    margin-left: 15px;
+}
+
+.subtitle {
+    min-width: 250px;
+    max-width: 250px;
+    margin-left: 15px;
+}
+
+.actions {
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.edit_BTN {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.delete_BTN {
+    font-size: 20px;
+    margin-left: 10px;
+}
