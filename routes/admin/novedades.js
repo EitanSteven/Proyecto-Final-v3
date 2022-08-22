@@ -33,7 +33,7 @@ router.get('/agregar', (req, res, next) => {
 
 router.post('/agregar', async (req, res, next) => {
     try {
-        if (req.body.titulo != '' && req.body.subtitulo != '' && req.body.cuerpo != '') {
+        if (req.body.titulo != '' && req.body.subtitulo != '' && req.body.introduction != '' && req.body.cuerpo != '') {
             await novedadesModel.addNews(req.body);
             res.redirect('/admin/novedades')
         } else {

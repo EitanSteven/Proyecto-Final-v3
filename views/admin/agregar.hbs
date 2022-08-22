@@ -23,11 +23,11 @@
     </div>
 </div>
     -->
-    <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">
+    <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data"</form>>
 
         <div class="Hshowcase">
             <div class="Hshowcase__Info">
-                <input type="text" placeholder="Ingrese el Titulo" class="HTitleInput H__Input">
+                <input type="text" name="titulo" placeholder="Ingrese el Titulo" class="HTitleInput H__Input">
                 <p class="Hp">By Stardust Coincidence</p>
             </div>
         </div>
@@ -35,8 +35,9 @@
         <div class="Content">
             <div class="Reminder"></div>
             <div class="History">
-                <input type="text" placeholder="Ingrese el Subtitulo" class=" H__Input H__TitleInput">
-                <textarea id="my-text" class="H__LoreInput H__Input" placeholder="Comience a Escribir..."></textarea>
+                <input type="text" name="subtitulo" placeholder="Ingrese el Subtitulo" class=" H__Input H__TitleInput">
+                
+                <textarea id="my-text" class="H__LoreInput H__Input" name="cuerpo" placeholder="Comience a Escribir..."></textarea>
             </div>
         </div>
 
@@ -46,18 +47,24 @@
             <h3 class="cargarImg_Title">Pagina principal...</h3>
             <p class="cargarImg_P">(Esto aparecera en la pagina principal)</p>
 
-            <input type="text" class="H__Input cargarInt_input" placeholder="Introduccion...">
+            <input type="text" class="H__Input cargarInt_input" name="introduction" placeholder="Introduccion...">
             
             <div id="drop_zone" class="drop_zone">
-                <img id="fileSelec" src="/stylesheets/icons/file-arrow-up-solid.svg" class="fileIcon" alt="Subir Img">
+               <!--  <img id="fileSelec" src="/stylesheets/icons/file-arrow-up-solid.svg" class="fileIcon" alt="Subir Img">
                 <p class="drop_zone_text">Arrastre o Suba Imagen</p>
                 <img src="" id="imgPreview" class="imgPreview" alt="">
-                <p class="drop_zone_text" id="fileName"></p>
+                <p class="drop_zone_text" id="fileName"></p> -->
             </div>
             
             <input class="guardarBTN" type="submit" id="guardar" value="Guardar">
         </div>
     </form>
+
+    <p>
+        {{#if error}}
+            <p>{{message}}</p>
+        {{/if}}
+    </p>
 
     <script src="/javascripts/loadfile.js"></script>
 
